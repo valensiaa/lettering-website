@@ -1,0 +1,18 @@
+# Created by trellis-cli vcanary
+# Documentation: https://roots.io/trellis/docs/wordpress-sites/
+
+wordpress_sites:
+  lettering.test:
+    site_hosts:
+    - canonical: lettering.test
+      redirects:
+      - www.lettering.test
+    local_path: ../site
+    admin_email: admin@lettering.test
+    multisite:
+      enabled: false
+    ssl:
+      enabled: false
+      provider: self-signed
+    cache:
+      enabled: false
